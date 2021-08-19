@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chestionar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="form" id="app">
+    <div class="formular">
+        <div class="title"> Chestionar de Înregistrare</div>
+        <form action="">
+            
+            <div class="form-item">
+                <div class="text"> Nume:</div>
+                <div> <input v-model="form.nume" type="text" name="nume" id=""></div>
+            </div>
+            <div class="form-item">
+                <div class="text"> Prenume:</div>
+                <div> <input v-model="form.prenume" type="text" name="prenume" id=""></div>
+            </div>
+            <div class="form-item">
+                <div class="text"> E-mail:</div>
+                <div> <input v-model="form.email" type="email" name="email" id=""></div>
+            </div>
+            <div class="form-item">
+                <div class="text"> Parola:</div>
+                <div> <input v-model="form.password" type="password" name="password" id=""></div>
+            </div>
+            <div class="form-item">
+                <div class="text"> Vîrstă:</div>
+                <div> <input v-model="form.virsta" type="number" name="virsta" id=""></div>
+            </div>
+            <div class="form-item">
+                <div class="text"> Data nașterii:</div>
+                <div> <input v-model="form.data" type="date" name="data" id=""></div>
+            </div>
+            <div >
+                <div class="text"> Genul:</div>
+                <div> <input type="radio" name="virsta" id="" value="M"> M</div>
+                <div> <input type="radio" name="virsta" id="" value="F"> F</div>
+            </div>
+            <div>
+                <div class="text"> Culoarea preferată:</div>
+                <div> <input type="color" name="data" id=""></div>
+            </div>
+            <div >
+                <div class="text"> Limbi vorbite:</div>
+                <div> <input type="checkbox" name="limbi" id=""> Engleză</div>
+                <div> <input type="checkbox" name="limbi" id=""> Franceză</div>
+                <div> <input type="checkbox" name="limbi" id=""> Română</div>
+                <div> <input type="checkbox" name="limbi" id=""> Rusă</div>
+            </div>
+            <div class="form-item">
+                <div class="text"> Orașul:</div>
+                <select name="city" id="">
+                    <option value="Balti"> Bălți</option>
+                    <option value="Chisinau"> Chișinău</option>
+                    <option value="Cahul"> Cahul</option>
+                    <option value="Calarasi"> Călărași</option>
+                </select>
+            </div>
+            <div class="form-item">
+                <div class="text"> Bibliografie:</div>
+                <div> <textarea name="textaria" id="">  </textarea></div>
+            </div>
+            <div class="form-item">
+                <div class="text"> Imagine de profil:</div>
+                <div> <input type="file" src="" alt=""> </div>
+            </div>
+        </form>
+        
+        <div class="button">
+            <button  @click="submit()" > Trimitere</button>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+<script src="app.js"></script>
+</body>
+</html>
